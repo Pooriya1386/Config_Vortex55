@@ -963,7 +963,7 @@ const buildProxyOutbound = async (proxyParams) => {
 const getFragmentConfigs = async (env, hostName, client) => {
     let Configs = [];
     let outbounds = [];
-    let proxySettings = await env.bpb.get("proxySettings", {type: 'json'});
+    let proxySettings = await env..get("proxySettings", {type: 'json'});
     const {
         remoteDNS, 
         localDNS, 
@@ -1006,7 +1006,7 @@ const getFragmentConfigs = async (env, hostName, client) => {
 
         let fragConfig = structuredClone(xrayConfigTemp);
         let outbound = structuredClone(xrayOutboundTemp);
-        let remark = `💦 BPB - ${addr}`;
+        let remark = `🆔TelegramID: @Config_Vortex55✔ - ${addr}`;
         delete outbound.mux;
         delete outbound.streamSettings.grpcSettings;
         delete outbound.streamSettings.realitySettings;
